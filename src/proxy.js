@@ -1,12 +1,10 @@
-import { NextResponse } from "next/server";
+import { NextResponse } from 'next/server';
 
 export function proxy(request) {
-  const isLoggedIn = request.cookies.get("auth")?.value === "true";
+  const isLoggedIn = request.cookies.get('auth')?.value === 'true';
 
   if (!isLoggedIn) {
-    return NextResponse.redirect(
-      new URL("/login", request.url)
-    );
+    return NextResponse.redirect(new URL('/login', request.url));
   }
 
   return NextResponse.next();
@@ -16,9 +14,7 @@ export function proxy(request) {
 //   matcher: ["/allproduct/:path*"],
 // };
 export const config = {
-  matcher: [
-    "/addtocart",          
-    // "/allproduct/:path*", 
-     "/allproduct/:id" 
+  matcher: ['/allproduct/:id/:path*',
+    '/addtocart/:path*'
   ],
 };

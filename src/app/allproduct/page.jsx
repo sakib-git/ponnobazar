@@ -122,7 +122,7 @@ const ProductCardGrid = () => {
         {/* Section Header */}
         <div className="mb-10 flex justify-between items-end">
           <div>
-            <h2 className="text-3xl font-bold text-gray-900"> All Products</h2>
+            <h2 className="text-3xl font-bold text-gray-900 underline"> All Products ({products.length})</h2>
           </div>
         </div>
 
