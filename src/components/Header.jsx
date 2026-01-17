@@ -20,7 +20,7 @@ const Header = () => {
 
   
   const handleLogout = () => {
-    document.cookie = 'auth=; path=/; max-age=0';
+    document.cookie = 'auth=; path=/; max-age=86400';
     setIsAuth(false);
     router.push('/login');
  
