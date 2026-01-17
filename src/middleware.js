@@ -33,5 +33,5 @@ export function middleware(request) {
 
 // Protect /allproduct and nested routes
 export const config = {
-  matcher: ["/allproduct", "/allproduct/:path*"],
+  matcher: ["/allproduct/:path*"],
 };
