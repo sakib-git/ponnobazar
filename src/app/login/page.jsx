@@ -14,8 +14,10 @@ export default function Login() {
     e.preventDefault();
 
     if (email === 'admin@example.com' && password === '123456') {
-      document.cookie = 'auth=true; path=/';
+      // document.cookie = 'auth=true; path=/';
+        document.cookie = "auth=true; path=/; max-age=3600; Secure; SameSite=Lax";
       router.push('/');
+      
     } else {
       setError('Invalid email or password');
     }
