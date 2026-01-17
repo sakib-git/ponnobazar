@@ -34,13 +34,13 @@ const Header = () => {
           Ponno Bazar
         </Link>
 
-        <nav className="flex gap-6 items-center">
+        <nav className="flex gap-6 items-center relative">
           <NavLink href="/">Home</NavLink>
           <NavLink href="/allproduct">All Products</NavLink>
           <NavLink href="/contact">Contact</NavLink>
-          <NavLink href="/addtocart" className="relative">
+          <NavLink href="/addtocart" >
             <BiCart size={22} />
-            <span className="  absolute  top-3 bg-red-500  text-white text-[10px]   font-bold  w-4 h-4 flex items-center justify-center  rounded-full">{cart.length}</span>
+            <span className="  absolute  top-0 bg-red-500  text-white text-[10px]   font-bold  w-4 h-4 flex items-center justify-center  rounded-full">{cart.length}</span>
           </NavLink>
 
           {!isAuth ? (
