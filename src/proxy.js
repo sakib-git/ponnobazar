@@ -14,7 +14,7 @@ export function proxy(request) {
 //   matcher: ["/allproduct/:path*"],
 // };
 export const config = {
-  matcher: ['/allproduct/:id/:path*',
+  matcher: ['/allproduct/:path*',
     '/addtocart/:path*'
   ],
 };
