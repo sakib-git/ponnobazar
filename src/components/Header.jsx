@@ -18,6 +18,7 @@ const Header = () => {
     setIsAuth(hasAuth);
   }, [pathname]);
 
+  
   const handleLogout = () => {
     document.cookie = 'auth=; path=/; max-age=0';
     setIsAuth(false);
