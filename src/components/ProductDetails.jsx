@@ -1,6 +1,6 @@
 'use client';
 
-import { useCart } from "./Usecartcontext";
+import { useCart } from "./CartProvider";
 
 const ProductDetails = ({ product }) => {
   const { cart , setCart} = useCart()

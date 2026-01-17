@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react';
 import { usePathname, useRouter } from 'next/navigation';
 import NavLink from './NavLink';
 import { BiCart } from 'react-icons/bi';
-import { useCart } from './Usecartcontext';
+import { useCart } from './CartProvider';
 
 const Header = () => {
   const [isAuth, setIsAuth] = useState(false);
@@ -23,7 +23,7 @@ const Header = () => {
     document.cookie = 'auth=; path=/; max-age=0';
     setIsAuth(false);
     router.push('/login');
-    router.refresh();
+ 
   };
 
   return (

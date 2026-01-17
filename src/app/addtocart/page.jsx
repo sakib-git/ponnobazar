@@ -1,5 +1,5 @@
 'use client';
-import { useCart } from '@/components/Usecartcontext';
+import { useCart } from '@/components/CartProvider';
 import React from 'react';
 
 const addtocart = () => {

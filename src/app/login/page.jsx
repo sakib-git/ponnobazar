@@ -15,7 +15,7 @@ export default function Login() {
 
     if (email === 'admin@example.com' && password === '123456') {
       document.cookie = 'auth=true; path=/';
-      router.push('/allproduct');
+      router.push('/');
     } else {
       setError('Invalid email or password');
     }

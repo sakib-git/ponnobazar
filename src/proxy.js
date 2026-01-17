@@ -10,6 +10,7 @@ export function proxy(request) {
   return NextResponse.next();
 }
 
+
 export const config = {
-  matcher: ["/allproduct/:path*"],
+  matcher: ["/allproduct", "/allproduct/:path*"],
 };
