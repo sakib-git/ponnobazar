@@ -23,6 +23,7 @@ const Header = () => {
     document.cookie = 'auth=; path=/; max-age=0';
     setIsAuth(false);
     router.push('/login');
+    router.refresh();
   };
 
   return (
